@@ -17,7 +17,6 @@ public class WebAuthorizationConfiguration {
             .authorizeHttpRequests(
                 c -> c.anyRequest().authenticated()
             )
-            .authenticationProvider( new CustomAuthenticationProvider() )
             .build();
     }
 }
